@@ -1,7 +1,6 @@
-FROM centos:7
+FROM python:3.10
 LABEL engg="prat"
 
-RUN yum install python3.10 -y
 WORKDIR /app
 COPY ./requirements.txt /app
 RUN pip install -r requirements.txt
